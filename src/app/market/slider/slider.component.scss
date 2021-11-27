@@ -8,4 +8,8 @@
   box-sizing: border-box;
 
   overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
