@@ -1,0 +1,26 @@
+.container {
+  background-color: white;
+  padding: 0px;
+  margin: 5px;
+  box-sizing: border-box;
+
+  padding-bottom: 30px;
+  margin-bottom: 90px;
+  margin-top: 20px;
+
+  .header {
+    box-sizing: border-box;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .item {
+      select {
+        font-weight: bold;
+        cursor: pointer;
+        font-size: small;
+      }
+    }
+  }
+}
