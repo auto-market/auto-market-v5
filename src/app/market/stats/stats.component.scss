@@ -12,10 +12,38 @@
     box-sizing: border-box;
     padding: 20px;
     padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    row-gap: 20px;
+    justify-items: center;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .date {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+    
+    .country {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+    }
+    
+    .province {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+    }
+    
+    .city {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+
+
 
     .item {
       
@@ -29,14 +57,22 @@
           font-weight: bold;
           cursor: pointer;
           font-size: small;
-          width: 200px;
+          width: 160px;
+          @media (min-width: 768px) {
+            width: 200px;
+          }
         }
       }
     }
   }
 
   .stats-container {
-    padding: 40px;
+    padding: 10px;
     box-sizing: border-box;
+    
+    @media (min-width: 768px) {
+      padding: 70px;
+      
+    }
   }
 }
