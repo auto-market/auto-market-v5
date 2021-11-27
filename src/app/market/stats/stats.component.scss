@@ -10,17 +10,33 @@
 
   .header {
     box-sizing: border-box;
+    padding: 20px;
     padding-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+
     .item {
-      select {
-        font-weight: bold;
-        cursor: pointer;
-        font-size: small;
+      
+      .label {
+        color: gray;
+        margin-bottom: 10px;
+      }
+
+      .value {
+        select {
+          font-weight: bold;
+          cursor: pointer;
+          font-size: small;
+          width: 200px;
+        }
       }
     }
+  }
+
+  .stats-container {
+    padding: 40px;
+    box-sizing: border-box;
   }
 }

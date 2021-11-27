@@ -80,6 +80,7 @@
           font-weight: bold;
           cursor: pointer;
           font-size: small;
+          width: 200px;
         }
       }
       .item {
@@ -117,6 +118,10 @@
 
       .item {
         width: 100px;
+        text-align: center;
+        .value {
+          font-weight: bold;
+        }
       }
     }
   }
